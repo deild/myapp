@@ -1,0 +1,30 @@
+build:
+  goos:
+    - darwin
+  goarch:
+    - amd64
+archive:
+  format: tar.gz
+  replacements:
+    amd64: x86_64
+    darwin: macOS
+  files:
+    - LICENSE
+checksum:
+  name_template: 'checksums.txt'
+git:
+  short_hash: true
+snapshot:
+  name_template: "{{ .Tag }}-SNAPSHOT"
+brew:
+  github:
+    owner: deild
+    name: homebrew-tap
+  folder: Formula
+changelog:
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+      - Merge pull request
+      - Merge branch
