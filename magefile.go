@@ -48,7 +48,7 @@ func Vendor() error {
 	return sh.Run("dep", "ensure")
 }
 
-// Formats the code via gofmt and goimports
+// Formats the code via gofmt
 func Fmt() error {
 	fmt.Println("+ formatting code")
 	fileList, err := goFileList()
@@ -57,10 +57,6 @@ func Fmt() error {
 	}
 	for _, file := range fileList {
 		err = sh.Run("gofmt", "-s", "-l", "-w", file)
-		if err != nil {
-			return err
-		}
-		err = sh.Run("goimports", "-w", file)
 		if err != nil {
 			return err
 		}
