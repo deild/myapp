@@ -90,12 +90,13 @@ func Ci() {
 	mg.Deps(Test, Fmt, Lint)
 }
 
-// Removes the generated directories anf files
+// Removes the generated directories and files
 func Clean() {
 	fmt.Println("+ clean")
 	os.RemoveAll("vendor")
 	os.RemoveAll(binary)
 	os.RemoveAll("coverage.out")
+	os.RemoveAll("dist")
 	os.Remove(filepath.Join(os.Getenv("GOPATH"), "bin", binary))
 }
 
