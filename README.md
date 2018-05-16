@@ -68,9 +68,9 @@ If you check the README file, you’ll see that there are already a few badges o
 
 First of all, you can read the [CONTRIBUTING.md](CONTRIBUTING.md) file. It is the _“newcomer guide”_.
 
-[![Release](https://img.shields.io/github/release/deild/myapp.svg?style=flat-square)](https://github.com/deild/myapp/releases/latest)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Travis](https://img.shields.io/travis/deild/myapp.svg?style=flat-square)](https://travis-ci.org/deild/myapp)
-[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](http://godoc.org/github.com/deild/myapp)
-[![Go Report Card](https://goreportcard.com/badge/github.com/deild/myapp?style=flat-square)](https://goreportcard.com/report/github.com/deild/myapp)
-[![Powered By: GoReleaser](https://img.shields.io/badge/powered%20by-goreleaser-green.svg?style=flat-square)](https://github.com/goreleaser)
+[![GitHub Release](https://img.shields.io/github/release/deild/myapp.svg?style=flat)](https://github.com/deild/myapp/releases/latest)
+[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](http://godoc.org/github.com/deild/myapp)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+[![Travis](https://img.shields.io/travis/deild/myapp.svg?style=flat)](https://travis-ci.org/deild/myapp)
+[![Go Report Card](https://goreportcard.com/badge/github.com/deild/myapp)](https://goreportcard.com/report/github.com/deild/myapp)
+[![Powered By: GoReleaser](https://img.shields.io/badge/powered%20by-goreleaser-brightgreen.svg?style=flat)](https://github.com/goreleaser)
