@@ -20,7 +20,7 @@ const (
 var (
 	Default   = Myapp
 	version   = "dev"
-	buildDate = time.Now().Format("2006.01.02-15:04:05")
+	buildDate = time.Now().UTC().Format(time.RFC3339)
 )
 
 // Build myapp binary
@@ -99,9 +99,14 @@ func Clean() {
 	os.Remove(filepath.Join(os.Getenv("GOPATH"), "bin", binary))
 }
 
+// Create a snapshot with goreleaser
+func Snapshot() error {
+	return sh.Run("goreleaser", "--rm-dist", "--snapshot")
+}
+
 func ldflags() string {
 	hash, _ := sh.Output("git", "rev-parse", "--short", "HEAD")
-	return fmt.Sprintf(`-ldflags=-X "main.date=%s" -X "main.commit=%s" -X "main.version=%s"`, buildDate, hash, version)
+	return fmt.Sprintf("-ldflags=-s -w -X main.date=%s -X main.commit=%s -X main.version=%s", buildDate, hash, version)
 }
 
 func goFileList() ([]string, error) {
