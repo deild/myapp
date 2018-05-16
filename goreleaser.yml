@@ -20,6 +20,9 @@ brew:
   github:
     owner: deild
     name: homebrew-tap
+  commit_author:
+    name: tolva
+    email: 8457875+deild@users.noreply.github.com
   folder: Formula
 changelog:
   filters:
