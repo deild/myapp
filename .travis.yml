@@ -1,10 +1,10 @@
 language: go
 go: 1.10.2
-install: 
-  - go get github.com/magefile/mage
-  - mage -v vendor
+before_install: go get github.com/magefile/mage
+install: mage -v vendor
 script: mage -v ci
 after_success:
+  # calls goreleaser in case of release tag
   - test -n "$TRAVIS_TAG" && curl -sL http://git.io/goreleaser | bash
 notifications:
   email: false
