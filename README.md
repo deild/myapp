@@ -1,5 +1,11 @@
 # Myapp
 
+[![GitHub Release](https://img.shields.io/github/release/deild/myapp.svg)](https://github.com/deild/myapp/releases/latest)
+[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/deild/myapp)
+[![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Powered By: GoReleaser](https://img.shields.io/badge/powered%20by-goreleaser-blue.svg)](https://github.com/goreleaser)
+[![SemVer](https://img.shields.io/badge/semver-2.0.0-blue.svg)](https://semver.org/)
+
 ## Overview
 
 Myapp is an myapp app.
@@ -68,11 +74,9 @@ If you check the README file, you’ll see that there are already a few badges o
 
 First of all, you can read the [CONTRIBUTING.md](CONTRIBUTING.md) file. It is the _“newcomer guide”_.
 
-[![GitHub Release](https://img.shields.io/github/release/deild/myapp.svg)](https://github.com/deild/myapp/releases/latest)
-[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/deild/myapp)
-[![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+## Health
+
 [![Travis](https://img.shields.io/travis/deild/myapp.svg)](https://travis-ci.org/deild/myapp)
 [![CodeFactor](https://www.codefactor.io/repository/github/deild/myapp/badge)](https://www.codefactor.io/repository/github/deild/myapp)
+[![Coverage Status](https://coveralls.io/repos/github/deild/myapp/badge.svg?branch=master)](https://coveralls.io/github/deild/myapp?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/deild/myapp)](https://goreportcard.com/report/github.com/deild/myapp)
-[![Powered By: GoReleaser](https://img.shields.io/badge/powered%20by-goreleaser-blue.svg)](https://github.com/goreleaser)
-[![SemVer](https://img.shields.io/badge/semver-2.0.0-blue.svg)](https://semver.org/)
