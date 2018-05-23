@@ -79,4 +79,5 @@ First of all, you can read the [CONTRIBUTING.md](CONTRIBUTING.md) file. It is th
 [![Travis](https://img.shields.io/travis/deild/myapp.svg)](https://travis-ci.org/deild/myapp)
 [![CodeFactor](https://www.codefactor.io/repository/github/deild/myapp/badge)](https://www.codefactor.io/repository/github/deild/myapp)
 [![Coverage Status](https://coveralls.io/repos/github/deild/myapp/badge.svg?branch=master)](https://coveralls.io/github/deild/myapp?branch=master)
+[![codecov](https://codecov.io/gh/deild/myapp/branch/master/graph/badge.svg)](https://codecov.io/gh/deild/myapp)
 [![Go Report Card](https://goreportcard.com/badge/github.com/deild/myapp)](https://goreportcard.com/report/github.com/deild/myapp)
