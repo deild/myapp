@@ -1,13 +1,15 @@
 language: go
 go: 1.10.2
-before_install: 
+before_install:
   - go get github.com/magefile/mage
   - go get github.com/mattn/goveralls
-install: mage -v vendor
-script: 
+  - mage vendor
+install: true
+script:
   - mage -v ci
   - goveralls -service=travis-ci
 after_success:
+  - bash <(curl -s https://codecov.io/bash)
   # calls goreleaser in case of release tag
   - test -n "$TRAVIS_TAG" && curl -sL http://git.io/goreleaser | bash
 notifications:
